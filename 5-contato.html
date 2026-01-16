@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Contato | Sistemas para Internet</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+
+    <body>
+        <div>
+            <div class="menu-top">  
+                <div>
+                    <a href="0-home.html">Projeto Orientado</a>
+                    <a href="1-caio.html">Caio</a>
+                    <a href="2-mari.html">Mari</a>
+                    <a href="3-tabela-de-curiosidades.html" >Tabela de Curiosidades</a>
+                    <a href="4-sites-favoritos.html">Sites Favoritos</a>
+                    <a class="current-page" href="5-contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Fale Conosco</h2>
+
+        <p id="contato-texto"> 
+            Sua opinião é muito importante para nós! Este espaço é dedicado para você enviar sugestões, compartilhar ideias, expressar opiniões ou registrar alguma reclamação. Queremos ouvir o que você tem a dizer para melhorar continuamente nossos serviços e atender suas necessidades. Não hesite em entrar em contato conosco – <strong>estamos aqui para ajudar!</strong>
+        </p> 
+
+        <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php"> 
+            <p>
+             <label for="nome"> Nome: </label>
+             <input type="text" name="nome" id="nome" size="50" maxlength="50" required placeholder="ex. Maria Costa"> 
+            </p>  
+
+            <p>
+             <label for="tel"> Telefone: </label>
+             <input type="tel" name="telefone" id="tel" required placeholder="ex. (99)99999-9999">
+            </p>
+
+            <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="ex.eu@email.com">
+            </p>
+
+            <p>
+            <label for="date">Data de Nascimento: </label>
+            <input type="date" name="date" id="date" required>
+            </p>
+      
+            <p>
+             <label for="grau-satisfação">Grau de Satisfação do Nosso Site </label>
+             <input type="range" name="grau-satisfação" id="grau-satisfação" min="0" max="10">
+            </p>
+
+            <p>
+            <label for="assunto"> Assunto: </label>
+            <input type="text" name="assunto" id="assunto" size="50" maxlength="50" required placeholder="Digite aqui"> 
+            </p> 
+
+            <p>
+            <label for="mensagem"> Escreva sua Mensagem abaixo: </label> <br>
+            <textarea name="mensagem" id="mensagem" required rows="6" placeholder="Escreva sua mensagem aqui..."> </textarea>
+            </p>
+
+            <p> 
+            <label for="arquivo"> Deseja anexar algum arquivo? </label> <br>
+            <input type="file" name="arquivo" id="arquivo" accept=".jpg, .doc ">
+            </p>
+           
+        
+            <button type="submit">Enviar</button>
+
+        </form> 
+
+        <div class="rodape"> 
+            <p> &copy; 2024 Projeto Orientado. Todos os direitos reservados. </p>
+            <p> Caio Cunha e Mariana Vieira </p>
+        </div>
+
+    </body>
+</html>
